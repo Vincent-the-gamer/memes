@@ -1,11 +1,11 @@
 <template>
     <div :border="`1px solid ${isDark ? `gray` : `black`} rd-5px`" 
-         w-300px min-h-150px h-fit p-20px
-         m-5px
+         w-330px min-h-150px h-fit p-20px
+         m-9px
          hover="bg-gray cursor-pointer"
          flex="~ flex-col justify-center items-center">
          <div>
-            <img :src="props.imgUrl" 
+            <img :src="props.imgUrl ?? '/logo.jpg'" 
                  :class="`${props.size?.width} ${props.size?.height} 
                         ${props.size ?? 'w-90px h-90px'}`"
                   p-5px/>
@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-interface Image {
+interface ImageSize {
     width: string,
     height: string
 }
@@ -27,7 +27,7 @@ interface Image {
 const props = defineProps<{
     title: string,
     description: string,
-    imgUrl: string,
-    size?: Image
+    imgUrl?: string,
+    size?: ImageSize
 }>()
 </script>

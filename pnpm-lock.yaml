@@ -8,12 +8,18 @@ dependencies:
   '@vueuse/core':
     specifier: ^10.7.2
     version: 10.7.2(vue@3.4.15)
+  modern-screenshot:
+    specifier: ^4.4.37
+    version: 4.4.37
   vue:
     specifier: ^3.4.15
     version: 3.4.15(typescript@5.3.3)
   vue-router:
     specifier: ^4.2.5
     version: 4.2.5(vue@3.4.15)
+  vue3-draggable-resizable:
+    specifier: ^1.6.5
+    version: 1.6.5
 
 devDependencies:
   '@iconify-json/carbon':
@@ -3079,6 +3085,10 @@ packages:
       ufo: 1.3.1
     dev: true
 
+  /modern-screenshot@4.4.37:
+    resolution: {integrity: sha512-D4u8dndnFRe4OyWDiUj/N0BNtViqQrdVkj0YSBM9aV7uqZegnIKVUNYN0l7AbXj9iKS5AubAap2/HctB+Lg5kg==}
+    dev: false
+
   /mrmime@1.0.1:
     resolution: {integrity: sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==}
     engines: {node: '>=10'}
@@ -4280,6 +4290,10 @@ packages:
       semver: 7.5.4
       typescript: 5.3.3
     dev: true
+
+  /vue3-draggable-resizable@1.6.5:
+    resolution: {integrity: sha512-31142E31fGNnq3HKqvmFLSsqIbhck7TyGuQWhUKrDw6DOcGAuRx4ddRjaxvT6fe7dgeKH53qAh+i0ZlWtPLl2g==}
+    dev: false
 
   /vue@3.4.15(typescript@5.3.3):
     resolution: {integrity: sha512-jC0GH4KkWLWJOEQjOpkqU1bQsBwf4R1rsFtw5GQJbjHVKWDzO6P0nWWBTmjp1xSemAioDFj1jdaK1qa3DnMQoQ==}

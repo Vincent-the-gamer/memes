@@ -1,5 +1,5 @@
 <template>
-    <header w-full h-40px position-fixed top-0 :class="`${isDark ? 'bg-black' : 'bg-gray'}`">
+    <header z-5 w-full h-40px position-fixed top-0 :class="`${isDark ? 'bg-black' : 'bg-gray'}`">
         <span top-6px position-absolute w-fit @click="() => router.push('/')" hover="cursor-pointer color-pink">
             <img src="/logo.jpg" alt="logo" position-absolute h-40px border-rd-4px top--4px />
             <h1 w-fit m-l-40px font-size-20px>Memes 梗合集</h1>

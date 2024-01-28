@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.7.2",
+    "modern-screenshot": "^4.4.37",
     "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vue3-draggable-resizable": "^1.6.5"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.28",

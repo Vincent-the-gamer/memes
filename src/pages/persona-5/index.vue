@@ -1,6 +1,6 @@
 <template>
-    <div flex="~ justify-center items-center" h-fit w-100vw>
-        <div bg-rgba-0-0-0-0.2 p-20px>
+    <div h-fit w-full>
+        <div bg-rgba-0-0-0-0.2 p-20px position-absolute left-0 w-full>
             <h1 font-size-30px>Persona 5 Generator 女神异闻录5生成器</h1>
             <p>
                 内容: <input v-model="content" input min-w-400px/>
@@ -16,9 +16,9 @@
                 <button btn @click="save">保存</button>
             </p>
             <p>
-                <canvas ref="canvas"></canvas>
+                <canvas w-full h-fit position-relative left-0 ref="canvas"></canvas>
             </p>
-            <p>
+            <p m-t-10>
                 <span>原项目： </span>
                 <a href="https://github.com/LzxHahaha/persona5" target="_blank"
                    hover="color-pink">

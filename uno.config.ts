@@ -17,6 +17,7 @@ export default defineConfig({
       /^bg-rgba-([\.\d]+)-([\.\d]+)-([\.\d]+)-([\.\d]+)$/, 
       ([_, r, g, b, a]) => ({ "background-color": `rgba(${r}, ${g}, ${b}, ${a})` })
     ],
+    [ "blue-archive", { "font-family": "BlueArchive, BlueArchiveFallback" }]
   ],
   presets: [
     presetUno(),
