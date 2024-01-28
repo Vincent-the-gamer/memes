@@ -2,28 +2,19 @@
     <div h-fit w-100vw left-0 position-absolute>
         <div bg-rgba-0-0-0-0.2 p-20px>
             <h1 font-size-8>Blue Archive Logo Generator 蔚蓝档案图标生成器</h1>
-            <div border="3px solid white" h-fit flex="~ items-center justify-center" w-96vw>
-                <div h-220px id="my-logo">
-                    <div p-8 hover:cursor-pointer>
-                        <Vue3DraggableResizable z-1
-                            :initW="logoData.w"
-                            :initH="logoData.h" 
-                            v-model:x="logoData.x" 
-                            v-model:y="logoData.y"
-                            v-model:w="logoData.w" 
-                            v-model:h="logoData.h" 
-                            v-model:active="logoData.active"
-                            :draggable="true">
-                            <div>
-                                <img w-300px h-300px z-0 pointer-events-none position-relative translate-y--14
-                                    translate-x-30 src="../../assets/materials/blue-archive/halo.png" />
-                                <img w-280px h-280px z-2 pointer-events-none position-relative translate-y--85
-                                    translate-x-34 src="../../assets/materials/blue-archive/cross-mb.png" />
-                            </div>
-                        </Vue3DraggableResizable>
-                        <div position-relative left-0 translate-y-13 text-nowrap w-full select-none>
+            <div border="3px solid white" h-fit flex="~ items-center justify-center"
+             bg-white w-96vw id="my-logo">
+                <div h-220px>
+                    <div p-8>
+                        <div>
+                            <img w-300px h-300px pointer-events-none position-relative translate-y--14 z-0
+                                translate-x-30 src="../../assets/materials/blue-archive/halo.png" />
+                            <img w-280px h-280px pointer-events-none position-relative translate-y--85 z-2
+                                translate-x-34 src="../../assets/materials/blue-archive/cross-mb.png" />
+                        </div>
+                        <div position-relative left-0 translate-y--135 text-nowrap w-full z-1 select-none>
                             <span color-blue font-size-22 italic blue-archive>{{ leftText }}</span>
-                            <span font-size-22 italic blue-archive>{{ rightText }}</span>
+                            <span font-size-22 italic blue-archive class="color-#394150">{{ rightText }}</span>
                         </div>
                     </div>
                 </div>
@@ -55,8 +46,6 @@
 
 <script setup lang="ts">
 import { domToPng } from "modern-screenshot"
-import Vue3DraggableResizable from 'vue3-draggable-resizable'
-import 'vue3-draggable-resizable/dist/Vue3DraggableResizable.css'
 
 const leftText = ref<string>("Blue")
 const rightText = ref<string>("Archive")
@@ -66,17 +55,10 @@ function reset() {
     rightText.value = "Archive"
 }
 
-const logoData = reactive({
-    x: 125,
-    y: 60,
-    h: 300,
-    w: 300,
-    active: false
-})
 
 function generateImage() {
     const myLogo = document.getElementById("my-logo") as HTMLElement
-    domToPng(myLogo).then(dataUrl => {
+    domToPng(myLogo).then((dataUrl: string) => {
         const link = document.createElement("a")
         link.href = dataUrl
         link.download = "BlueArchiveLogo.png"

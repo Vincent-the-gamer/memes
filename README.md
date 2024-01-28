@@ -7,7 +7,7 @@
 <p align="center">收录各种梗图生成器, 并使用Vue重写</p>
 
 # 用到的工具
-- UnoCss - 非常好原子化CSS，使我的写代码过程更爽
+- UnoCss - 非常好原子化CSS，使我的样式写得更快
 - taze - 随时随地，更新依赖。~~(并不，上撤硕的时候不能更新)~~
 - VueUse - 好用的Vue hooks库
 - modern-screenshot - 神のDom转换工具
