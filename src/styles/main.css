@@ -1,11 +1,12 @@
 @font-face {
   font-family: "BlueArchive";
-  src: url("../assets/fonts/BlueArchive/RoGSanSrfStd-Bd.otf");
+  src: url("../assets/fonts/BlueArchive/RoGSanSrfStd-Bd_latin.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "BlueArchiveFallback";
   src: url("../assets/fonts/BlueArchive/GlowSansSC-Normal-Bold.otf");
+  font-weight: normal;
 }
 
 html,
