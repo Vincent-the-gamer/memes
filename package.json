@@ -1,6 +1,6 @@
 {
   "name": "memes",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "收录各种梗图制作器，并使用Vue重写。",
   "type": "module",
   "scripts": {
