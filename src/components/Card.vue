@@ -5,7 +5,7 @@
          hover="bg-gray cursor-pointer"
          flex="~ flex-col justify-center items-center">
          <div>
-            <img :src="props.imgUrl ?? '/logo.jpg'" 
+            <img :src="props.imgUrl ?? '/logo/logo.jpg'" 
                  :class="`${props.size?.width} ${props.size?.height} 
                         ${props.size ?? 'w-90px h-90px'}`"
                   p-5px/>
@@ -19,15 +19,6 @@
 </template>
 
 <script setup lang="ts">
-interface ImageSize {
-    width: string,
-    height: string
-}
-
-const props = defineProps<{
-    title: string,
-    description: string,
-    imgUrl?: string,
-    size?: ImageSize
-}>()
+import type { Card } from "~/types"
+const props = defineProps<Card>()
 </script>
