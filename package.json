@@ -8,8 +8,7 @@
     "serve": "vite --open",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
-    "dep": "taze",
-    "postinstall": "npx simple-git-hooks"
+    "dep": "taze"
   },
   "dependencies": {
     "@vueuse/core": "^10.7.2",
