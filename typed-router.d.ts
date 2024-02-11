@@ -43,6 +43,7 @@ declare module 'vue-router/auto/routes' {
     '/[...all]': RouteRecordInfo<'/[...all]', '/:all(.*)', { all: ParamValue<true> }, { all: ParamValue<false> }>,
     '/blue-archive/': RouteRecordInfo<'/blue-archive/', '/blue-archive', Record<never, never>, Record<never, never>>,
     '/kaomoji/': RouteRecordInfo<'/kaomoji/', '/kaomoji', Record<never, never>, Record<never, never>>,
+    '/nonsense/': RouteRecordInfo<'/nonsense/', '/nonsense', Record<never, never>, Record<never, never>>,
     '/persona-5/': RouteRecordInfo<'/persona-5/', '/persona-5', Record<never, never>, Record<never, never>>,
   }
 }

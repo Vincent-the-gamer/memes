@@ -39,10 +39,17 @@ const cardList: Card[] = [
         clickEvent: () => toRoute(`/blue-archive`)
     },
     {
-        title: "随机颜文字",
+        title: "随机颜文字 Kaomoji",
         description: "随机获取一个颜文字表情",
         imgUrl: "/logo/kaomoji.gif",
         clickEvent: () => toRoute("/kaomoji")
+    },
+    {
+        title: "狗屁不通文章生成器 Nonsense Generator",
+        description: "随机生成包含自定义主题的一堆废话",
+        imgUrl: "/logo/nonsense.png",
+        size: { width: 'w-135px', height: 'h-90px' },
+        clickEvent: () => toRoute("/nonsense")
     },
     {
         title: "更多梗敬请期待...",
