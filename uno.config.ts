@@ -17,7 +17,11 @@ export default defineConfig({
       /^bg-rgba-([\.\d]+)-([\.\d]+)-([\.\d]+)-([\.\d]+)$/, 
       ([_, r, g, b, a]) => ({ "background-color": `rgba(${r}, ${g}, ${b}, ${a})` })
     ],
-    [ "blue-archive", { "font-family": "BlueArchive, BlueArchiveFallback" }]
+    [ "blue-archive", { "font-family": "BlueArchive, BlueArchiveFallback" }],
+    [
+      /^white-space-([-a-z]+)$/,
+      ([_, option]) => ({"white-space": `${option}`})
+    ]
   ],
   presets: [
     presetUno(),

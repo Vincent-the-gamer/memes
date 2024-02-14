@@ -52,6 +52,13 @@ const cardList: Card[] = [
         clickEvent: () => toRoute("/nonsense")
     },
     {
+        title: "随机发疯文学 Crazy Memes",
+        description: "随机获取一段发疯文学",
+        imgUrl: "/logo/crazy.jpg",
+        size: { width: 'w-120px', height: 'h-90px' },
+        clickEvent: () => toRoute("/crazy")
+    },
+    {
         title: "更多梗敬请期待...",
         description: "就是这样"
     }
