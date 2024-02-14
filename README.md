@@ -10,6 +10,8 @@
 - UnoCSS - 非常好原子化CSS，使我的样式写得更快
 - taze - 随时随地，更新依赖。~~(并不，上撤硕的时候不能更新)~~
 - VueUse - 好用的Vue hooks库
+- unplugin-auto-import - 编译时自动引入模块
+- unplugin-vue-component - 编译时自动引入Vue组件
 
 # 游玩
 [https://memes.vince-g.xyz](https://memes.vince-g.xyz)
