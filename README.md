@@ -4,7 +4,7 @@
 
 <h1 align="center">Memes 梗合集</h1>
 
-<p align="center">收录各种梗图生成器, 并使用Vue重写</p>
+<p align="center">收录各种梗生成器/梗随机, 并使用Vue重写</p>
 
 # 用到的工具
 - UnoCSS - 非常好原子化CSS，使我的样式写得更快
